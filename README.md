@@ -24,7 +24,7 @@ This is a Django-based web application for managing a bookstore. It provides fun
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/bookstore.git
+   git clone https://github.com/IAmKushagraSharma/Bookstore.git
    cd bookstore
    ```
 
