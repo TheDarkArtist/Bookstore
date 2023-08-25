@@ -1,21 +1,60 @@
 {% extends '_base.html' %}
-
 {% block title %}About{% endblock title %}
 
 {% block content %}
-
-
-<div class="container-fluid mt-4" >
-    <a href="{% url 'admin:index' %}">Admin</a>
-    | <a href="{% url 'account_change_password' %}">Change pass</a>
-    | <a href="{% url 'account_reset_password' %}">Reset pass</a>
-    <hr>
-    
-    <h1> About Page </h1>
-
-
-    
+<div class="container-fluid mt-4">
+  <div class="d-flex justify-content-end mb-3">
+    <a href="{% url 'admin:index' %}" class="btn btn-primary me-2">Admin</a>
+    <a href="{% url 'account_change_password' %}" class="btn btn-secondary mx-2"
+      >Change Password</a
+    >
+    <a href="{% url 'account_reset_password' %}" class="btn btn-secondary"
+      >Reset Password</a
+    >
+  </div>
+  <hr />
+  <div class="text-center mb-4">
+    <h1>About Our Bookstore</h1>
+    <p class="lead">Learn more about who we are and what we do</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Our Mission</h2>
+      <p>
+        At our bookstore, we aim to provide a wide range of books for all ages
+        and interests. We believe in the power of reading to educate, entertain,
+        and inspire. Our mission is to create a welcoming space for book lovers
+        and promote a culture of reading in our community.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? Feel free to reach out to us:</p>
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> tda@thedarkartist.in</li>
+        <li><strong>Phone:</strong> +91 7426072284</li>
+        <li><strong>Address: </strong> 221B Baker Street, London</li>
+      </ul>
+      <h2>Follow Us</h2>
+      <p>Stay connected through our social media channels:</p>
+      <ul class="list-unstyled d-flex gap-4">
+        <li class="me-3">
+          <a href="" class="text-decoration-none"
+            ><i class="bi bi-facebook"></i> Facebook</a
+          >
+        </li>
+        <li class="me-3">
+          <a href="https://wwww.twitter.com/0xthedarkartist" class="text-decoration-none mx-2"
+            ><i class="bi bi-twitter"></i> Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/0xdummy/" class="text-decoration-none"
+            ><i class="bi bi-instagram"></i> Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-
-
 {% endblock content %}
