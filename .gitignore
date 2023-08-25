@@ -1,2 +1,5 @@
 # virtual envs
 /venv
+
+# Python bytecode files
+*.pyc
